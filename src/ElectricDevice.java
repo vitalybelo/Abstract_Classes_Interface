@@ -6,13 +6,4 @@ public interface ElectricDevice {
     void switchOn ();
     void switchOff ();
 
-    default void toggle () {
-        if (isSwitchOn()) {
-            switchOff();
-        } else {
-            switchOn();
-        }
-
-    }
-
 }
